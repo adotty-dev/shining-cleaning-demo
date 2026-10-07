@@ -974,7 +974,7 @@
       </div>
 
 
-      <form class="quote-form">
+      <form class="quote-form" action="https://formspree.io/f/xoejewba" method="POST">
 
 
         <div class="form-row">
@@ -989,6 +989,7 @@
             <input
               type="text"
               id="name"
+              name="name"
               placeholder="Your name"
               required
             >
@@ -1005,6 +1006,7 @@
             <input
               type="tel"
               id="phone"
+              name="phone"
               placeholder="(555) 555-5555"
               required
             >
@@ -1021,7 +1023,7 @@
             What service do you need?
           </label>
 
-          <select id="service">
+          <select id="service" name="service" required>
 
             <option value="">
               Select a service
@@ -1060,6 +1062,7 @@
 
           <textarea
             id="message"
+            name="message"
             rows="5"
             placeholder="Tell us about your home, business, approximate size, preferred date, etc."
           ></textarea>
